@@ -2,7 +2,7 @@
 
 The Zoom Call Recording Webhook App is a Node.js application that allows you to automatically record your Zoom calls and store them in a designated folder. It also retrieves caller ID information and logs details of the call such as its duration and direction.
 
-            ![zoomphone-logo-800x418](https://user-images.githubusercontent.com/107200645/236102060-8f61bcd0-6169-4421-b0d8-5ef2fafab6b9.jpg)
+![zoomphone-logo-800x418](https://user-images.githubusercontent.com/107200645/236102060-8f61bcd0-6169-4421-b0d8-5ef2fafab6b9.jpg)
 
 ## Technical Details
 
