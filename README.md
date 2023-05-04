@@ -102,8 +102,4 @@ Thirdly, the app requires the following Zoom scopes to be authorized:
 - `account:read:admin` - Required to fetch user details such as extension number and email address.
 - `recording:read` - Required to fetch recording details such as the recording file URL.
 
-To grant these permissions, the Zoom Call Recording Webhook App application should be registered in the Zoom App Marketplace and installed for each user that will use the app. Additionally, the necessary permissions and scopes should be specified in the app's OAuth 2.0 configuration. 
-
-To make it easier for others to configure the app with the necessary environment variables, an `.env.example` file is included in the repository that lists all the required environment variables with example values. Users should copy this file and rename it to `.env`, then update the values for their specific use case. 
-
 It is important to ensure that the necessary permissions and scopes are granted to the app to prevent any issues with fetching and uploading call recordings.
