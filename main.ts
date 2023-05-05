@@ -1,5 +1,4 @@
 import dotenv from 'dotenv'; // Import dotenv for loading environment variables from .env file
-const port: any = process.env.PORT ?? 4000 // Set the port to listen on, defaulting to 4000
 import express, { NextFunction } from 'express'; // Import the express framework
 import bodyParser from 'body-parser'; // Import bodyParser to parse the request body
 const crypto = require('crypto') // Import crypto module for hashing functions
@@ -10,6 +9,7 @@ import functions, { IZoomHeaders, IZoomWebhookBody } from "./functions" // Impor
 const app = express() // Create express app
 app.use(bodyParser.json()) // Use bodyParser middleware to parse request body
 dotenv.config() // Load environment variables from .env file
+const port: any = process.env.PORT ?? 4000 // Set the port to listen on, defaulting to 4000
 
 // Create async queue for processing webhooks
 const queue = async.queue(async (task: any, callback: any) => {
